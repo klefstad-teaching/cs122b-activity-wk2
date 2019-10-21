@@ -1,0 +1,23 @@
+databaseConfig:
+  dbUsername: username
+  dbPassword: password
+  dbHostname: hostname
+  dbPort: 3306
+  dbDriver: com.mysql.cj.jdbc.Driver
+  dbName: name
+  dbSettings: ?autoReconnect=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=PST
+
+serviceConfig:
+  scheme: http://
+  hostName: 0.0.0.0
+  port: 2942
+  path: /activity
+
+loggerConfig:
+  outputDir: ./logs/
+  outputFile: test.log
+
+sessionConfig:
+  timeout: 600000
+  expiration: 1800000
+
