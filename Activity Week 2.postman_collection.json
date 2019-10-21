@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "7dfd4981-d764-439a-a1d4-31ffc9c5cba5",
+		"name": "Activity Week 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crypto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": [\"H\", \"e\", \"l\", \"l\", \"o\"]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2942/activity/example/crypto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2942",
+					"path": [
+						"activity",
+						"example",
+						"crypto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Session",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"peter.anteater@uci.edu\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2942/activity/example/session",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2942",
+					"path": [
+						"activity",
+						"example",
+						"session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2942/activity/test/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2942",
+					"path": [
+						"activity",
+						"test",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
