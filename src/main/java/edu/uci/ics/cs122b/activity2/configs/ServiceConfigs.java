@@ -1,6 +1,6 @@
-package edu.uci.ics.cs122b.activity.wk2.configs;
+package edu.uci.ics.cs122b.activity2.configs;
 
-import edu.uci.ics.cs122b.activity.wk2.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity2.logger.ServiceLogger;
 
 public class ServiceConfigs {
 

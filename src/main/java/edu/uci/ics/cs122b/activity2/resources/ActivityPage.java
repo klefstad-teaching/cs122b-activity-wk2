@@ -1,15 +1,15 @@
-package edu.uci.ics.cs122b.activity.wk2.resources;
+package edu.uci.ics.cs122b.activity2.resources;
 
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.uci.ics.cs122b.activity.wk2.logger.ServiceLogger;
-import edu.uci.ics.cs122b.activity.wk2.models.SaltAndHashRequestModel;
-import edu.uci.ics.cs122b.activity.wk2.models.SaltAndHashResponseModel;
-import edu.uci.ics.cs122b.activity.wk2.models.SessionRequestModel;
-import edu.uci.ics.cs122b.activity.wk2.models.SessionResponseModel;
-import edu.uci.ics.cs122b.activity.wk2.security.Crypto;
-import edu.uci.ics.cs122b.activity.wk2.security.Session;
+import edu.uci.ics.cs122b.activity2.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity2.models.SaltAndHashRequestModel;
+import edu.uci.ics.cs122b.activity2.models.SaltAndHashResponseModel;
+import edu.uci.ics.cs122b.activity2.models.SessionRequestModel;
+import edu.uci.ics.cs122b.activity2.models.SessionResponseModel;
+import edu.uci.ics.cs122b.activity2.security.Crypto;
+import edu.uci.ics.cs122b.activity2.security.Session;
 import org.apache.commons.codec.binary.Hex;
 
 import javax.ws.rs.*;

@@ -1,7 +1,7 @@
-package edu.uci.ics.cs122b.activity.wk2.core;
+package edu.uci.ics.cs122b.activity2.core;
 
-import edu.uci.ics.cs122b.activity.wk2.ActivityService;
-import edu.uci.ics.cs122b.activity.wk2.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity2.ActivityService;
+import edu.uci.ics.cs122b.activity2.logger.ServiceLogger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

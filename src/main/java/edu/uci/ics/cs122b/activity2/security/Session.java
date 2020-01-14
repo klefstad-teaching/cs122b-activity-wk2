@@ -1,4 +1,4 @@
-package edu.uci.ics.cs122b.activity.wk2.security;
+package edu.uci.ics.cs122b.activity2.security;
 
 import java.sql.Timestamp;
 

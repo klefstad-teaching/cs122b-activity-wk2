@@ -1,6 +1,6 @@
-package edu.uci.ics.cs122b.activity.wk2.resources;
+package edu.uci.ics.cs122b.activity2.resources;
 
-import edu.uci.ics.cs122b.activity.wk2.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity2.logger.ServiceLogger;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

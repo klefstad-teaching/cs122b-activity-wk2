@@ -1,4 +1,4 @@
-package edu.uci.ics.cs122b.activity.wk2.logger;
+package edu.uci.ics.cs122b.activity2.logger;
 
 import java.io.File;
 import java.io.IOException;

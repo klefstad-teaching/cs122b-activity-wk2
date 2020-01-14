@@ -1,6 +1,6 @@
-package edu.uci.ics.cs122b.activity.wk2.core;
+package edu.uci.ics.cs122b.activity2.core;
 
-import edu.uci.ics.cs122b.activity.wk2.models.StudentRequestModel;
+import edu.uci.ics.cs122b.activity2.models.StudentRequestModel;
 
 import java.util.ArrayList;
 

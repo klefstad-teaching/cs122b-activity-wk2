@@ -1,11 +1,11 @@
-package edu.uci.ics.cs122b.activity.wk2;
+package edu.uci.ics.cs122b.activity2;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import edu.uci.ics.cs122b.activity.wk2.configs.ConfigsModel;
-import edu.uci.ics.cs122b.activity.wk2.configs.ServiceConfigs;
-import edu.uci.ics.cs122b.activity.wk2.logger.ServiceLogger;
-import edu.uci.ics.cs122b.activity.wk2.security.Session;
+import edu.uci.ics.cs122b.activity2.configs.ConfigsModel;
+import edu.uci.ics.cs122b.activity2.configs.ServiceConfigs;
+import edu.uci.ics.cs122b.activity2.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity2.security.Session;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.internal.util.ExceptionUtils;
@@ -22,7 +22,7 @@ import java.sql.SQLException;
 
 public class ActivityService {
 
-    public static final String RESOURCE_PATH = "edu.uci.ics.cs122b.activity.wk2.resources";
+    public static final String RESOURCE_PATH = "edu.uci.ics.cs122b.activity2.resources";
 
     public static ActivityService service;
     private static ServiceConfigs serviceConfigs;
