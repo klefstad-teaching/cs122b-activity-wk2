@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "7dfd4981-d764-439a-a1d4-31ffc9c5cba5",
+		"_postman_id": "f5dd9ad3-416b-4ca2-a7e4-e7f47b1f698f",
 		"name": "Activity Week 2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -87,7 +87,36 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Peter\",\r\n    \"lastName\": \"Anteater\",\r\n    \"gpa\": 4.0,\r\n    \"major\": \"CS\",\r\n    \"email\": \"peter@uci.edu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2942/activity/example/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2942",
+					"path": [
+						"activity",
+						"example",
+						"student"
+					]
+				}
+			},
+			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
