@@ -14,9 +14,9 @@ public class StudentRecords {
     public static void retrieveStudentsFromDB(String name) {
         try {
             // Construct the query
-            String query =  "SELECT id, email, firstName, lastName, GPA" +
-                            " FROM students" +
-                            " WHERE firstName LIKE ? OR lastName LIKE ?;";
+            String query =  "SELECT id, email, first_name, last_name, gpa" +
+                            " FROM student" +
+                            " WHERE first_name LIKE ? OR last_name LIKE ?;";
 
             // Create the prepared statement
             PreparedStatement ps = ActivityService.getCon().prepareStatement(query);
@@ -38,10 +38,10 @@ public class StudentRecords {
             while (rs.next()) {
                 Integer id = rs.getInt("id");
                 String email = rs.getString("email");
-                String firstName = rs.getString("firstName");
-                String lastName = rs.getString("lastName");
-                Float gpa = rs.getFloat("GPA");
-                ServiceLogger.LOGGER.info("Retrieved student");
+                String firstName = rs.getString("first_name");
+                String lastName = rs.getString("last_name");
+                Float gpa = rs.getFloat("gpa");
+                ServiceLogger.LOGGER.info("Retrieved student: (" + id + "," + email+" )");
             }
 
         } catch (SQLException e) {

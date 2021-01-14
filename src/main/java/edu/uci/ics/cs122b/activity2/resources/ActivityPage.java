@@ -3,11 +3,10 @@ package edu.uci.ics.cs122b.activity2.resources;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.uci.ics.cs122b.activity2.core.NewStudentRecords;
+import edu.uci.ics.cs122b.activity2.core.StudentRecords;
 import edu.uci.ics.cs122b.activity2.logger.ServiceLogger;
-import edu.uci.ics.cs122b.activity2.models.SaltAndHashRequestModel;
-import edu.uci.ics.cs122b.activity2.models.SaltAndHashResponseModel;
-import edu.uci.ics.cs122b.activity2.models.SessionRequestModel;
-import edu.uci.ics.cs122b.activity2.models.SessionResponseModel;
+import edu.uci.ics.cs122b.activity2.models.*;
 import edu.uci.ics.cs122b.activity2.security.Crypto;
 import edu.uci.ics.cs122b.activity2.security.Session;
 import org.apache.commons.codec.binary.Hex;
@@ -92,6 +91,25 @@ public class ActivityPage {
         return Response.status(Response.Status.OK).entity(responseModel).build();
     }
 
+    @Path("student")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response createStudent(@Context HttpHeaders headers, String jsonText) {
+        StudentRequestModel requestModel;
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            requestModel = mapper.readValue(jsonText, StudentRequestModel.class);
+            NewStudentRecords.insertNewStudentRecord(requestModel);
 
+            StudentRecords.retrieveStudentsFromDB(requestModel.getFirstName());
+        }
+        catch (IOException e) {
+            e.printStackTrace();;
+            return null;
+        }
 
+        ServiceLogger.LOGGER.info("Received request for student");
+        ServiceLogger.LOGGER.info("Request:\n" + jsonText);
+        return Response.status(Response.Status.OK).build();
+    }
 }
